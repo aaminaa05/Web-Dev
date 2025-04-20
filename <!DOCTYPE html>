@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горящие туры - Поехали с нами!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .filters {
+            width: 250px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .filters h3 {
+            margin-top: 0;
+        }
+        .filters label {
+            display: block;
+            margin: 5px 0;
+        }
+        .cards {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding-left: 20px;
+        }
+        .card {
+            background: white;
+            width: 30%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .button {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Поехали с нами! - Лучшие горящие туры</div>
+    <div class="container">
+        <aside class="filters">
+            <h3>Куда</h3>
+            <label><input type="checkbox"> Все страны</label>
+            <label><input type="checkbox"> Таиланд</label>
+            <label><input type="checkbox"> Египет</label>
+            <label><input type="checkbox"> Турция</label>
+            <h3>Выезд из</h3>
+            <label><input type="checkbox"> Алматы</label>
+            <label><input type="checkbox"> Астана</label>
+        </aside>
+        <section class="cards">
+            <div class="card">
+                <img src="hotel1.jpg" alt="Отель 1">
+                <div class="card-content">
+                    <h4>Radisson Resort</h4>
+                    <p>ОАЭ, Рас-эль-Хайма</p>
+                    <p class="price">752 647 ₸</p>
+                    <a href="#" class="button">Подробнее</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hotel2.jpg" alt="Отель 2">
+                <div class="card-content">
+                    <h4>Dendro Hotel</h4>
+                    <p>Вьетнам, Нячанг</p>
+                    <p class="price">640 000 ₸</p>
+                    <a href="#" class="button">Подробнее</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hotel3.jpg" alt="Отель 3">
+                <div class="card-content">
+                    <h4>Lonicera World</h4>
+                    <p>Турция, Аланья</p>
+                    <p class="price">835 621 ₸</p>
+                    <a href="#" class="button">Подробнее</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
